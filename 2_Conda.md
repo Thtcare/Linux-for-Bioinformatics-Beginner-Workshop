@@ -1,3 +1,7 @@
+<div align="center">
+<img src="https://github.com/user-attachments/assets/3e44e70f-d0f9-4560-b75f-5860b574935d" alt="Image" width="300"/>
+</div>
+
 Conda is a powerful command line tool for package and environment management that runs on Windows, macOS, and Linux. 
 
 This guide to getting started with conda goes over the basics of starting up and using conda to create environments and install packages. 
@@ -33,3 +37,4 @@ If everything is working, you'll see output similar to:
     <img src="https://github.com/user-attachments/assets/a94bfdbd-f082-421a-97ea-15785d593b06" alt="Image" width="550"/>
 </div>
     
+## Conda environment
