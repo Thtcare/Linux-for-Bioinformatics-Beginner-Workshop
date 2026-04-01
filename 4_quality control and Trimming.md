@@ -17,7 +17,7 @@ This aligns with the principle **“garbage in, garbage out”**: if poor-qualit
 
 After the initial quality check, low-quality bases are trimmed, and short reads are removed to enhance the data quality. A second quality check is then performed to confirm that the remaining reads are of sufficient length and quality for further analysis. This ensures the data is reliable for subsequent steps.
 
-# Fastqc
+# FastQC
 **FastQC** is a widely used tool that provides a comprehensive overview of basic quality control metrics for raw next-generation sequencing (NGS) data. It produces an HTML report that summarizes results across several modules, each flagged as **"Passed"**, **"Warning"**, or **"Failed"**. These assessments are primarily tailored for whole genome shotgun (WGS) sequencing and may not accurately reflect quality issues in other types of sequencing data. Importantly, a "Warning" or "Failed" flag doesn't always indicate a problem—researchers should interpret these results in the context of their specific experiment and sequencing strategy.
 
 <div align="center">
@@ -62,7 +62,7 @@ You should see the FastQC help menu if the installation was successful.
 ---
 
 ### Run FastQC 
-1. Activate fastqc environtment – activating environments is essential to making the software in the environments work well. 
+1. Activate fastqc environment – activating environments is essential to making the software in the environments work well. 
 ```{bash}  
 conda activate fastqc
 ```
@@ -133,7 +133,7 @@ conda create -n trimmomatic
 ```{bash}  
 conda activate trimmomatic
 ```  
-3. Install FastQC from Bioconda
+3. Install trimmomatic from Bioconda
 ```{bash} 
 conda install bioconda::trimmomatic
 ``` 
@@ -143,7 +143,7 @@ trimmomatic PE
 ```
 You should see the FastQC help menu if the installation was successful.
 
-### Run FastQC 
+### Run Trimmomatic 
 1. Activate trimmomatic environtment – activating environments is essential to making the software in the environments work well. 
 ```{bash}  
 conda activate trimmomatic
