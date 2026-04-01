@@ -13,10 +13,6 @@ This aligns with the principle **“garbage in, garbage out”**: if poor-qualit
 
 After the initial quality check, low-quality bases are trimmed, and short reads are removed to enhance the data quality. A second quality check is then performed to confirm that the remaining reads are of sufficient length and quality for further analysis. This ensures the data is reliable for subsequent steps.
 
-## QC Pipeline Overview
-
-FASTQ → FastQC → Trimming → FastQC → MultiQC
-
 # FastQC
 **FastQC** is a widely used tool that provides a comprehensive overview of basic quality control metrics for raw next-generation sequencing (NGS) data. It produces an HTML report that summarizes results across several modules, each flagged as **"Passed"**, **"Warning"**, or **"Failed"**. These assessments are primarily tailored for whole genome shotgun (WGS) sequencing and may not accurately reflect quality issues in other types of sequencing data. Importantly, a "Warning" or "Failed" flag doesn't always indicate a problem—researchers should interpret these results in the context of their specific experiment and sequencing strategy.
 
@@ -99,6 +95,13 @@ FastQC generates comprehensive reports, including:
 - Text Report: A detailed text file providing the raw data for each analysis.
 - Zipped File: A compressed file containing all the outputs for easy sharing and storage.
 
+## MultiQC
+
+MultiQC aggregates results from multiple FastQC reports into a single summary.
+
+```bash
+multiqc .
+
 ---
 
 ## Trimming and Filtering 
@@ -158,8 +161,6 @@ ls -l
   ```{bash}
   trimmomatic PE HG001.fastq.gz HG002.fastq.gz -baseout trim/trim.fastq HEADCROP:6 LEADING:3 TRAILING:10 SLIDINGWINDOW:4:20
   ```
-### Sort and Index
-Sorting organizes data in a specific order (like ascending or descending), while indexing provides a way to quickly access or retrieve specific elements within that organized data.
 
 
 
