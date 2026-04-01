@@ -86,20 +86,12 @@ If launching Ubuntu shows an error about the kernel:
        </div>
 ---
 
-<div align="center">
-<img src="https://github.com/user-attachments/assets/3e44e70f-d0f9-4560-b75f-5860b574935d" alt="Image" width="300"/>
-</div>
-
-Conda is a powerful command line tool for package and environment management that runs on Windows, macOS, and Linux. 
-
-This guide to getting started with conda goes over the basics of starting up and using conda to create environments and install packages. 
-
 #  Install MobaXterm
 Install MobaXterm (Windows)
 
 MobaXterm is a powerful terminal tool for Windows that provides SSH, SFTP, X11, and Unix commands in one application.
 
-## 🔧 Download
+## Download
 
 1. Go to the official website: https://mobaxterm.mobatek.net/
 2. Click **Download**
@@ -107,9 +99,7 @@ MobaXterm is a powerful terminal tool for Windows that provides SSH, SFTP, X11, 
    - Installer edition (recommended)
    - Portable edition (no installation required)
 
----
-
-## 💻 Installation (Installer version)
+## Installation (Installer version)
 
 1. Open the downloaded `.exe` file  
 2. Click **Next**
@@ -117,9 +107,7 @@ MobaXterm is a powerful terminal tool for Windows that provides SSH, SFTP, X11, 
 4. Choose installation location  
 5. Click **Install**  
 6. Click **Finish**
-
----
-
+   
 ## 🚀 First Launch
 
 1. Open MobaXterm  
@@ -131,7 +119,17 @@ MobaXterm is a powerful terminal tool for Windows that provides SSH, SFTP, X11, 
 5. Click **OK**
 
 ---
+
 ## Install conda  by conda-forge/miniforge 
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/3e44e70f-d0f9-4560-b75f-5860b574935d" alt="Image" width="300"/>
+</div>
+
+Conda is a powerful command line tool for package and environment management that runs on Windows, macOS, and Linux. 
+
+This guide to getting started with conda goes over the basics of starting up and using conda to create environments and install packages. 
+
 - gitclone
 
 You can use either wget or curl to download the latest installer script for your system:
