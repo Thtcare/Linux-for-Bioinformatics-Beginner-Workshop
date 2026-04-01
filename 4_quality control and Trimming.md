@@ -13,7 +13,7 @@ This aligns with the principle **“garbage in, garbage out”**: if poor-qualit
 
 After the initial quality check, low-quality bases are trimmed, and short reads are removed to enhance the data quality. A second quality check is then performed to confirm that the remaining reads are of sufficient length and quality for further analysis. This ensures the data is reliable for subsequent steps.
 
-# QC Pipeline Overview
+## QC Pipeline Overview
 
 FASTQ → FastQC → Trimming → FastQC → MultiQC
 
