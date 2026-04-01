@@ -124,14 +124,14 @@ Make sure your directory contains FastQC output files such as:
  *_fastqc.zip
  *_fastqc.html
 
-### Run MultiQC
-```bash
-multiqc .
-```
-
 ### Verify installation
 ```bash
 multiqc --help
+```
+
+### Run MultiQC
+```bash
+multiqc .
 ```
 
 ---
