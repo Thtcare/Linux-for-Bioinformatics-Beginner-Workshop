@@ -95,7 +95,7 @@ FastQC generates comprehensive reports, including:
 - Text Report: A detailed text file providing the raw data for each analysis.
 - Zipped File: A compressed file containing all the outputs for easy sharing and storage.
 
-## MultiQC
+# MultiQC
 
 MultiQC is a tool that aggregates results from multiple bioinformatics analyses (such as FastQC) into a single, unified report.
 
