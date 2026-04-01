@@ -101,7 +101,7 @@ MultiQC aggregates results from multiple FastQC reports into a single summary.
 
 ```bash
 multiqc .
-
+```
 ---
 
 ## Trimming and Filtering 
