@@ -7,8 +7,6 @@ This guide walks you through installing **Ubuntu (24.04 LTS or other versions)**
   <img src="https://github.com/user-attachments/assets/e4d1ba58-cd90-4a95-9ed6-6ef9379fe02a" alt="Ubuntu WSL Screenshot" width="300"/>
 </div>
 
----
-
 ## Install Ubuntu 
 ### Step 1: Enable Windows Subsystem for Linux
 
@@ -125,7 +123,7 @@ MobaXterm is a powerful terminal tool for Windows that provides SSH, SFTP, X11, 
 
 ---
 
-## Install conda  by conda-forge/miniforge 
+# Install conda  by conda-forge/miniforge 
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/3e44e70f-d0f9-4560-b75f-5860b574935d" alt="Image" width="300"/>
