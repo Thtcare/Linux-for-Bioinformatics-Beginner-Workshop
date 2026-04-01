@@ -36,7 +36,7 @@ reference: https://rtsf.natsci.msu.edu/sites/_rtsf/assets/File/FastQC_TutorialAn
 
 ---
 
-### Install Fastqc
+### Install FastQC
 1. Create a new Conda environment
 ```{bash}  
 conda create -n fastqc
@@ -97,11 +97,43 @@ FastQC generates comprehensive reports, including:
 
 ## MultiQC
 
-MultiQC aggregates results from multiple FastQC reports into a single summary.
+MultiQC is a tool that aggregates results from multiple bioinformatics analyses (such as FastQC) into a single, unified report.
 
+Instead of opening many individual FastQC reports, MultiQC allows you to:
+- View all samples in one place
+- Compare quality across samples
+- Quickly identify problematic samples (outliers)
+
+When working with multiple sequencing samples, analyzing each FastQC report individually can be time-consuming and inefficient.
+MultiQC solves this by:
+- Collecting all FastQC outputs
+- Summarizing them into a single report
+- Providing interactive plots for comparison
+
+### Install MultiQC
+```bash
+conda create -n multiqc
+conda activate multiqc
+conda install bioconda::multiqc
+```
+### Navigate to directory with FastQC results
+```bash
+cd ~/workshop/data/
+```
+Make sure your directory contains FastQC output files such as:
+ *_fastqc.zip
+ *_fastqc.html
+
+### Run MultiQC
 ```bash
 multiqc .
 ```
+
+### Verify installation
+```bash
+multiqc --help
+```
+
 ---
 
 ## Trimming and Filtering 
