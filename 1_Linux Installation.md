@@ -94,6 +94,43 @@ Conda is a powerful command line tool for package and environment management tha
 
 This guide to getting started with conda goes over the basics of starting up and using conda to create environments and install packages. 
 
+#  Install MobaXterm
+Install MobaXterm (Windows)
+
+MobaXterm is a powerful terminal tool for Windows that provides SSH, SFTP, X11, and Unix commands in one application.
+
+## 🔧 Download
+
+1. Go to the official website: https://mobaxterm.mobatek.net/
+2. Click **Download**
+3. Choose version:
+   - Installer edition (recommended)
+   - Portable edition (no installation required)
+
+---
+
+## 💻 Installation (Installer version)
+
+1. Open the downloaded `.exe` file  
+2. Click **Next**
+3. Accept the license agreement  
+4. Choose installation location  
+5. Click **Install**  
+6. Click **Finish**
+
+---
+
+## 🚀 First Launch
+
+1. Open MobaXterm  
+2. Click **Session**  
+3. Choose **SSH**  
+4. Enter:
+   - Remote host (e.g. HPC server IP)
+   - Username  
+5. Click **OK**
+
+---
 ## Install conda  by conda-forge/miniforge 
 - gitclone
 
