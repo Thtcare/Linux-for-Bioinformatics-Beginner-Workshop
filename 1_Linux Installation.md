@@ -11,6 +11,7 @@ This guide walks you through installing **Ubuntu (24.04 LTS or other versions)**
 
 ## Install Ubuntu 
 ### Step 1: Enable Windows Subsystem for Linux
+
    1. In the Windows Search bar, type: **Turn Windows features on or off**
    2. Open the menu
    3. Scroll down and check:
@@ -24,6 +25,7 @@ This guide walks you through installing **Ubuntu (24.04 LTS or other versions)**
         
 
 ### Step 2: Open Command Prompt
+
 1. Open the **Start menu**, and search for:
    ```
    cmd
@@ -47,6 +49,7 @@ This guide walks you through installing **Ubuntu (24.04 LTS or other versions)**
 
 
 ### Step 3: Download Ubuntu
+
    1. For Download Ubuntu, You can choose one of the following methods:
    #### Option A: Microsoft Store (Recommended)
 
@@ -57,6 +60,7 @@ This guide walks you through installing **Ubuntu (24.04 LTS or other versions)**
 - [Download Ubuntu from ubuntu.com](https://ubuntu.com/download/desktop)
 2. Open Ubuntu
 ### Step 4: Install WSL2 Kernel Update (If Needed)
+
 If launching Ubuntu shows an error about the kernel:
 
 <div align="center">
@@ -74,6 +78,7 @@ If launching Ubuntu shows an error about the kernel:
 4. Reboot if necessary.
 
 ### Step 5: Launch Ubuntu
+
 1. Open **Ubuntu** from the Start menu.
     - It will display:
       > Installing, this may take a few minutes...
@@ -108,7 +113,7 @@ MobaXterm is a powerful terminal tool for Windows that provides SSH, SFTP, X11, 
 5. Click **Install**  
 6. Click **Finish**
    
-## 🚀 First Launch
+## First Launch
 
 1. Open MobaXterm  
 2. Click **Session**  
