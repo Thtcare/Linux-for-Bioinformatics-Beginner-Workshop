@@ -84,6 +84,7 @@ fastqc --help
 fastqc HG001.fastq.gz HG002.fastq.gz -o output_qc -t 4
 ```
 &emsp;&emsp;-o output_fastqc: specifies the output directory for the results. Make sure the output_fastqc directory exists before running the command.
+
 &emsp;&emsp;-t 4: uses 4 threads to speed up the analysis
 
 > [!NOTE]
@@ -95,6 +96,7 @@ FastQC generates comprehensive reports, including:
 - Text Report: A detailed text file providing the raw data for each analysis.
 - Zipped File: A compressed file containing all the outputs for easy sharing and storage.
 
+---
 # MultiQC
 
 MultiQC is a tool that aggregates results from multiple bioinformatics analyses (such as FastQC) into a single, unified report.
@@ -116,6 +118,10 @@ conda create -n multiqc
 conda activate multiqc
 conda install bioconda::multiqc
 ```
+### Verify installation
+```bash
+multiqc --help
+```
 ### Navigate to directory with FastQC results
 ```bash
 cd ~/workshop/data/
@@ -123,11 +129,6 @@ cd ~/workshop/data/
 Make sure your directory contains FastQC output files such as:
  *_fastqc.zip
  *_fastqc.html
-
-### Verify installation
-```bash
-multiqc --help
-```
 
 ### Run MultiQC
 ```bash
