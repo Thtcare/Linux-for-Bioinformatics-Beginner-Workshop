@@ -113,24 +113,33 @@ MultiQC solves this by:
 - Providing interactive plots for comparison
 
 ### Install MultiQC
+1. Create a new Conda environment
 ```bash
 conda create -n multiqc
-conda activate multiqc
-conda install bioconda::multiqc
 ```
-### Verify installation
+2. Activate the environment
+```{bash}  
+conda activate multiqc
+```  
+3. Install MultiQC from Bioconda
+```{bash} 
+conda install bioconda::multiqc
+``` 
+4. Verify the installation
 ```bash
 multiqc --help
 ```
-### Navigate to directory with FastQC results
+
+### Run MultiQC
+1. Navigate to directory with FastQC results
 ```bash
 cd ~/workshop/data/
 ```
 Make sure your directory contains FastQC output files such as:
  *_fastqc.zip
  *_fastqc.html
-
-### Run MultiQC
+ 
+2. Run MultiQC 
 ```bash
 multiqc .
 ```
@@ -176,7 +185,7 @@ conda install bioconda::trimmomatic
 ```{bash} 
 trimmomatic PE
 ```
-You should see the FastQC help menu if the installation was successful.
+You should see the trimmomatic help menu if the installation was successful.
 
 ### Run Trimmomatic 
 1. Activate trimmomatic environtment – activating environments is essential to making the software in the environments work well. 
@@ -188,11 +197,22 @@ conda activate trimmomatic
 cd ~/workshop/data/
 ls -l
 ```
-4. Run trimmomatic
-  - Run trimmomatic For paired-end reads
+4. Run trimmomatic For paired-end reads
   ```{bash}
   trimmomatic PE HG001.fastq.gz HG002.fastq.gz -baseout trim/trim.fastq HEADCROP:6 LEADING:3 TRAILING:10 SLIDINGWINDOW:4:20
   ```
+  - PE mean Paired-end reads (R1 and R2)
+  - Input
+      - HG001.fastq.gz → Forward reads (R1)
+      - HG002.fastq.gz → Reverse reads (R2)
+  - Trimming Parameters
+    
+|  Parameter  | Description | 
+|---------|-------------|
+|HEADCROP:6 | Remove the first 6 bases from each read |
+|LEADING:3 | Remove bases from the start if quality < 3|
+|TRAILING:10 | Remove bases from the end if quality < 10|
+|SLIDINGWINDOW:4:20 | Scan with a 4-base window; cut when average quality < 20|
 
 
 
