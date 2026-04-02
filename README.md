@@ -2,4 +2,4 @@
 Hands-on Linux for Bioinformatics: Beginner Workshop
 
 # Agenda
-รอ confirm
+XXXXXXXXXXXXXXXXXXXXXXXXXX รอ confirm XXXXXXXXXXXXXXXXXXXXXXX
