@@ -38,3 +38,22 @@ If everything is working, you'll see output similar to:
 </div>
     
 ## Conda environment
+
+It is an isolated directory that contains a specific set of software packages and their dependencies.
+
+### Essential Commands
+
+To manage environments, use these common commands in your terminal or Anaconda Prompt: 
+|  Task  | Command | 
+|---------|-------------|
+|Create |	conda create --name myenv python=3.9|
+|Activate |	conda activate myenv|
+|Deactivate	| conda deactivate|
+|List Envs | conda env list (or conda info --envs)|
+|List Packages	| conda list (shows packages in the active env)|
+|Delete |	conda remove --name myenv --all|
+
+### Core Benefits
+  - Isolation: Prevents version conflicts between projects by keeping their libraries and even the Python interpreter separate.
+  - Reproducibility: You can export your environment to a YAML file, allowing others to recreate the exact setup on different machines.
+  - Multi-language Support: Manages binary libraries and multiple programming languages beyond Python.
