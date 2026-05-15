@@ -57,3 +57,16 @@ To manage environments, use these common commands in your terminal or Anaconda P
   - Isolation: Prevents version conflicts between projects by keeping their libraries and even the Python interpreter separate.
   - Reproducibility: You can export your environment to a YAML file, allowing others to recreate the exact setup on different machines.
   - Multi-language Support: Manages binary libraries and multiple programming languages beyond Python.
+
+### Practice
+- create environment: 
+```bash
+conda create --name myenv python=3.9
+```
+Explanation:
+conda create: create a new environment
+--name myenv: specify the environment name (myenv)
+python=3.9: install Python version 3.9 in this environment
+You can replace myenv with any environment name you want.
+
+
