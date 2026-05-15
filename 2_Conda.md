@@ -7,7 +7,7 @@ Conda is a powerful command line tool for package and environment management tha
 This guide to getting started with conda goes over the basics of starting up and using conda to create environments and install packages. 
 
 ## Install conda  by conda-forge/miniforge 
-- gitclone
+#### gitclone
 
 You can use either wget or curl to download the latest installer script for your system:
 ```cmd
@@ -18,7 +18,7 @@ or
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh" 
 ```
 
-- Run the script with: 
+#### Run the script with: 
 ```bash
 bash Miniforge3-$(uname)-$(uname -m).sh 
 ```
@@ -27,7 +27,7 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 source ~/.bashrc
 ```
 
-- Test conda
+#### Test conda
 
 ```bash
 conda
@@ -59,14 +59,14 @@ To manage environments, use these common commands in your terminal or Anaconda P
   - Multi-language Support: Manages binary libraries and multiple programming languages beyond Python.
 
 ### Practice
-- create environment: 
+#### create environment: 
 ```bash
 conda create --name myenv python=3.9
 ```
 Explanation:
-conda create: create a new environment
---name myenv: specify the environment name (myenv)
-python=3.9: install Python version 3.9 in this environment
-You can replace myenv with any environment name you want.
+-  conda create: create a new environment
+-  --name myenv: specify the environment name (myenv)
+-  python=3.9: install Python version 3.9 in this environment
+-  You can replace myenv with any environment name you want.
 
 
