@@ -27,6 +27,8 @@ Linux organizes files in a hierarchical structure starting from the root directo
 ├── var
 └── dev
 ```
+### Current Working Directory
+Check your current location:
 
 
 
